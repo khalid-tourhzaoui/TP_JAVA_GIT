@@ -2,6 +2,7 @@ public class Etudiant {
     private String nom;
     private int age;
     private String matricule;
+    private double note;
 
     // Constructor
     public Etudiant(String nom, int age, String matricule) {
@@ -41,6 +42,14 @@ public class Etudiant {
     }
     // Default constructor
     public Etudiant() {
+    }
+
+    public double getNote() {
+        return note;
+    }
+
+    public void setNote(double note) {
+        this.note = note;
     }
     
 }
