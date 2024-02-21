@@ -56,5 +56,14 @@ public class Etudiant {
     // Default constructor
     public Etudiant() {
     }
+    public static double calculerStatistiques(Etudiant[] etudiants) {
+        double somme = 0;
+        int count = 0;
+        for (Etudiant etudiant : etudiants) {
+            somme += etudiant.getNote();
+            count++;
+        }
+        return somme / count;
+    }
     
 }
