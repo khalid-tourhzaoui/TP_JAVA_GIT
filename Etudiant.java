@@ -2,6 +2,7 @@ public class Etudiant {
     private String nom;
     private int age;
     private String matricule;
+    private  Double note;
 
     // Constructor
     public Etudiant(String nom, int age, String matricule, Double note) {
@@ -53,8 +54,13 @@ public class Etudiant {
         System.out.println("Matricule: " + matricule);
         System.out.println("Note: " + note);
     }
-    // Default constructor
-    public Etudiant() {
+    public static double calculerStatistiques(Etudiant[] etudiants) {
+        double somme = 0;
+        for (Etudiant etudiant : etudiants) {
+            somme += etudiant.getNote();
+        }
+        return somme / etudiants.length;
     }
     
+
 }
