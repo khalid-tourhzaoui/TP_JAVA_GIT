@@ -2,6 +2,7 @@ public class Etudiant {
     private String nom;
     private int age;
     private String matricule;
+    private  double note;
 
     // Constructor
     public Etudiant(String nom, int age, String matricule, Double note) {
@@ -53,6 +54,5 @@ public class Etudiant {
         System.out.println("Matricule: " + matricule);
         System.out.println("Note: " + note);
     }
- 
-    
+
 }
