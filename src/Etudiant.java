@@ -53,8 +53,6 @@ public class Etudiant {
         System.out.println("Matricule: " + matricule);
         System.out.println("Note: " + note);
     }
-    // Default constructor
-    public Etudiant() {
-    }
+ 
     
 }
