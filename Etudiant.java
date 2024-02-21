@@ -39,4 +39,8 @@ public class Etudiant {
         System.out.println("Age: " + age);
         System.out.println("Matricule: " + matricule);
     }
+    // Default constructor
+    public Etudiant() {
+    }
+    
 }
