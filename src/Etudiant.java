@@ -65,5 +65,14 @@ public class Etudiant {
         }
         return somme / count;
     }
+    public static void afficherEtudiantAyantLaMeilleureNote(Etudiant[] etudiants) {
+        Etudiant meilleurEtudiant = etudiants[0];
+        for (Etudiant etudiant : etudiants) {
+            if (etudiant.getNote() > meilleurEtudiant.getNote()) {
+                meilleurEtudiant = etudiant;
+            }
+        }
+        meilleurEtudiant.afficherInfo();
+    }
     
 }
